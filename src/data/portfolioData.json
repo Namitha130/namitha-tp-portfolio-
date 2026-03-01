@@ -175,9 +175,9 @@
         "Learned responsive CSS Grid and Flexbox layouts",
         "Improved state management for complex filtering logic"
       ],
-      "techStack": ["React.js", "CSS3", "JavaScript"],
+      "techStack": ["React.js", "CSS3", "JavaScript" , "vite" , "Tailwind-css"],
       "github": "https://github.com/Namitha130/prestige-builder-app",
-      "liveDemo": "https://prestige-builder-app.vercel.app",
+      "liveDemo": "https://sri-lakshmi-krupa-c8dxfhbvj-namitha-tps-projects.vercel.app/",
       "platform": "Vercel",
       "image": ""
     },
