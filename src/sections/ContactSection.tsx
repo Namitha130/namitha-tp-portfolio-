@@ -3,7 +3,8 @@ import AnimatedSection from "@/components/AnimatedSection";
 import SectionHeader from "@/components/SectionHeader";
 import portfolioData from "@/data/portfolioData.json";
 import { FiGithub, FiLinkedin, FiMail, FiSend, FiCheck, FiExternalLink, FiLoader } from "react-icons/fi";
-import { supabase } from "@/integrations/client";
+import emailjs from "@emailjs/browser";
+
 import { toast } from "sonner";
 import { FaBehance } from "react-icons/fa";
 const socialIcons: Record<string, typeof FiGithub> = {
@@ -18,46 +19,53 @@ const ContactSection = () => {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = new FormData(e.currentTarget);
-    const name = (form.get("name") as string).trim();
-    const email = (form.get("email") as string).trim();
-    const phone = (form.get("phone") as string)?.trim() || "";
-    const message = (form.get("message") as string).trim();
+ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+   e.preventDefault();
 
-    const newErrors: Record<string, string> = {};
-    if (!name) newErrors.name = "Name is required";
-    if (!email) newErrors.email = "Email is required";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) newErrors.email = "Invalid email";
-    if (!message) newErrors.message = "Message is required";
+   const form = e.currentTarget;
+   const formData = new FormData(form);
 
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
-    }
+   const name = (formData.get("name") as string)?.trim();
+   const email = (formData.get("email") as string)?.trim();
+   const phone = (formData.get("phone") as string)?.trim() || "";
+   const message = (formData.get("message") as string)?.trim();
 
-    setErrors({});
-    setLoading(true);
+   const newErrors: Record<string, string> = {};
 
-    try {
-      const { error } = await supabase.functions.invoke("send-contact-email", {
-        body: { name, email, phone, message },
-      });
+   if (!name) newErrors.name = "Name is required";
+   if (!email) newErrors.email = "Email is required";
+   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+     newErrors.email = "Invalid email";
+   if (!message) newErrors.message = "Message is required";
 
-      if (error) throw error;
+   if (Object.keys(newErrors).length > 0) {
+     setErrors(newErrors);
+     return;
+   }
 
-      setSubmitted(true);
-      (e.target as HTMLFormElement).reset();
-      toast.success("Message sent! I'll get back to you soon.");
-      setTimeout(() => setSubmitted(false), 4000);
-    } catch (err) {
-      console.error("Contact form error:", err);
-      toast.error("Failed to send message. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
+   setErrors({});
+   setLoading(true);
+
+   try {
+     await emailjs.sendForm(
+       "service_me98m0s", // from EmailJS dashboard
+       "template_o90ovk7", // from EmailJS dashboard
+       form,
+       "kfd2oBn3A-9MgPZIj", // from EmailJS dashboard
+     );
+
+     setSubmitted(true);
+     form.reset();
+     toast.success("Message sent successfully!");
+
+     setTimeout(() => setSubmitted(false), 4000);
+   } catch (error) {
+     console.error("EmailJS Error:", error);
+     toast.error("Failed to send message. Please try again.");
+   } finally {
+     setLoading(false);
+   }
+ };
 
   return (
     <section id="contact">
