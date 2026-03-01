@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+
+    --primary: 252 58% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 250 20% 94%;
+    --secondary-foreground: 252 40% 20%;
+
+    --muted: 250 20% 94%;
+    --muted-foreground: 250 15% 47%;
+
+    --accent: 252 58% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 250 20% 90%;
+    --input: 250 20% 90%;
+    --ring: 252 58% 35%;
+
+    --radius: 0.75rem;
+
+    --hero-gradient: linear-gradient(135deg, hsl(252 58% 35%), hsl(270 50% 45%));
+    --section-alt: 250 25% 96%;
+    --shadow-soft: 0 4px 24px -4px hsl(252 58% 35% / 0.08);
+    --shadow-card: 0 1px 3px hsl(220 25% 10% / 0.04), 0 4px 16px hsl(220 25% 10% / 0.06);
+    --shadow-card-hover: 0 8px 32px hsl(252 58% 35% / 0.12);
+
+    --nav-bg: 0 0% 100% / 0.85;
+    --timeline-line: 252 58% 35%;
+  }
+
+  .dark {
+    --background: 222 30% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 222 25% 12%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 222 25% 12%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 252 55% 60%;
+    --primary-foreground: 252 30% 10%;
+
+    --secondary: 252 20% 16%;
+    --secondary-foreground: 250 20% 90%;
+
+    --muted: 252 20% 16%;
+    --muted-foreground: 250 15% 55%;
+
+    --accent: 252 55% 60%;
+    --accent-foreground: 252 30% 10%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 252 20% 18%;
+    --input: 252 20% 18%;
+    --ring: 252 55% 60%;
+
+    --section-alt: 252 25% 10%;
+    --shadow-soft: 0 4px 24px -4px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 1px 3px hsl(0 0% 0% / 0.2), 0 4px 16px hsl(0 0% 0% / 0.15);
+    --shadow-card-hover: 0 8px 32px hsl(252 55% 60% / 0.15);
+    --nav-bg: 222 30% 8% / 0.85;
+    --timeline-line: 252 55% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+  .section-alt {
+    background-color: hsl(var(--section-alt));
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold font-heading text-foreground mb-3;
+  }
+  .section-subtitle {
+    @apply text-muted-foreground text-lg max-w-2xl mx-auto;
+  }
+  .card-base {
+    @apply bg-card rounded-2xl border border-border p-6;
+    box-shadow: var(--shadow-card);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  .card-base:hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+  .badge-skill {
+    @apply inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-medium bg-secondary text-secondary-foreground border border-border;
+    transition: all 0.2s ease;
+  }
+  .badge-skill:hover {
+    @apply bg-primary text-primary-foreground border-primary;
+    transform: translateY(-1px);
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-primary-foreground;
+    background: var(--hero-gradient);
+    box-shadow: 0 4px 16px hsl(252 58% 35% / 0.25);
+    transition: all 0.2s ease;
+  }
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 24px hsl(252 58% 35% / 0.35);
+  }
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-medium border-2 border-primary text-primary bg-transparent;
+    transition: all 0.2s ease;
+  }
+  .btn-outline:hover {
+    @apply bg-primary text-primary-foreground;
+    transform: translateY(-1px);
+  }
+  .nav-glass {
+    background: hsl(var(--nav-bg));
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

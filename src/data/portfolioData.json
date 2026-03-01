@@ -1,0 +1,318 @@
+{
+  "personal": {
+    "name": "Namitha T P",
+    "title": "Frontend Developer | React.js Developer",
+    "summary": "Frontend Developer with 3+ years of experience building scalable enterprise and government web applications using React.js, Redux, and modern JavaScript. Specialized in reusable component architecture, performance optimization, and REST API integration.",
+    "location": "Bangalore, Karnataka, India",
+    "availability": "Open to opportunities | Freelance work",
+    "profileImage": "",
+    "resumeUrl": "public/Namitha_TP_Resume.pdf",
+    "email": "itsnamitha130@gmail.com",
+    "phone": "+91-8123578130",
+    "socialLinks": {
+      "github": "https://github.com/Namitha130",
+      "linkedin": "https://linkedin.com/in/namitha-t-p-130ln/",
+      "email": "mailto:itsnamitha130@gmail.com"
+    }
+  },
+  "about": {
+    "yearsOfExperience": 3,
+    "projectsWorkedOn": "15+",
+    "domains": ["Government Portal", "Enterprise Dashboard", "E-commerce", "OTT Platform"],
+    "strengths": [
+      "Reusable Component Architecture",
+      "Performance Optimization",
+      "API Integration & Error Handling",
+      "Clean Code & Best Practices",
+      "Cross-team Collaboration (Backend & QA)"
+    ]
+  },
+  "skills": {
+    "Frontend": [
+      { "name": "React.js", "level": "Advanced" },
+      { "name": "Redux", "level": "Advanced" },
+      { "name": "JavaScript (ES6+)", "level": "Advanced" },
+      { "name": "HTML5", "level": "Advanced" },
+      { "name": "CSS3", "level": "Advanced" },
+      { "name": "SCSS", "level": "Intermediate" },
+      { "name": "Material UI", "level": "Intermediate" }
+    ],
+    "Tools": [
+      { "name": "Git" },
+      { "name": "Bitbucket" },
+      { "name": "Jira" },
+      { "name": "Jenkins" },
+      { "name": "Postman" },
+      { "name": "Visual Studio Code" }
+    ],
+    "Concepts": [
+      { "name": "Responsive Web Design" },
+      { "name": "Lazy Loading" },
+      { "name": "State Management" },
+      { "name": "REST API Integration" },
+      { "name": "Performance Optimization" },
+      { "name": "DOM Manipulation" },
+      { "name": "Bug Fixing & Debugging" }
+    ]
+  },
+  "experience": [
+    {
+      "id": "nisg-uidai",
+      "company": "National Institute of Smart Government (NISG) - UIDAI",
+      "role": "Application Developer",
+      "location": "Bengaluru, Karnataka",
+      "duration": "Nov 2025 – Present",
+      "techStack": ["React.js", "JavaScript", "SCSS", "REST APIs", "Gitea", "Jenkins", "Argo CD", "CI/CD"],
+      "aboutProject": "Working onsite at UIDAI on the Quality Check (QC) Portal supporting authentication and validation workflows for large-scale government systems.",
+      "responsibilities": [
+        "Developing and maintaining scalable UI components using React.js.",
+        "Analyzing and upgrading deprecated third-party libraries.",
+        "Managing package version updates and resolving dependency conflicts.",
+        "Handling staging deployments using Gitea, Jenkins, and Argo CD.",
+        "Collaborating with backend and QA teams for seamless integration."
+      ],
+      "impact": [
+        "Improved application security by replacing deprecated libraries.",
+        "Reduced technical debt through structured package upgrades.",
+        "Streamlined staging deployment process using CI/CD pipelines."
+      ],
+      "projects": [
+        {
+          "id": "qc-portal",
+          "name": "QC Portal",
+          "description": "Quality Check portal supporting authentication and validation workflows for large-scale government identity systems.",
+          "techStack": ["React.js", "REST APIs", "SCSS"],
+          "status": "Ongoing"
+        },
+        {
+          "id": "my-aadhaar",
+          "name": "My Aadhaar Public App",
+          "description": "Public-facing Aadhaar service application with validation workflows and citizen-facing features.",
+          "techStack": ["React.js", "JavaScript"],
+          "status": "Ongoing"
+        }
+      ]
+    },
+    {
+      "id": "assiduus",
+      "company": "Assiduus Distribution Pvt Ltd",
+      "role": "Front-End Developer",
+      "location": "Bengaluru, Karnataka",
+      "duration": "Jan 2024 – Feb 2025",
+      "techStack": ["React.js", "Redux", "Material UI", "REST APIs"],
+      "aboutProject": "Led the redesign of Brand Central Dashboard to display sales, advertisement insights, and stock health metrics.",
+      "responsibilities": [
+        "Redesigned front-end architecture using React & Redux.",
+        "Built reusable UI components.",
+        "Implemented lazy loading for performance optimization.",
+        "Integrated real-time APIs."
+      ],
+      "impact": [
+        "Reduced development time by 80%.",
+        "Improved dashboard loading performance."
+      ],
+      "projects": [
+        {
+          "id": "brand-dashboard",
+          "name": "Brand Central Dashboard",
+          "description": "Analytics dashboard for sales and stock health monitoring across multiple e-commerce platforms.",
+          "techStack": ["React.js", "Redux"],
+          "status": "Completed"
+        },
+        {
+          "id": "ads-insight",
+          "name": "Ads Performance Module",
+          "description": "Real-time advertisement performance tracking module with interactive charts and KPI widgets.",
+          "techStack": ["React.js", "REST APIs"],
+          "status": "Completed"
+        }
+      ]
+    },
+    {
+      "id": "htc-global",
+      "company": "HTC Global Services",
+      "role": "Associate Trainee",
+      "location": "Bengaluru, Karnataka",
+      "duration": "Sep 2021 – Dec 2022",
+      "techStack": ["HTML", "CSS", "JavaScript", "React.js"],
+      "aboutProject": "Supported frontend development for enterprise-level applications.",
+      "responsibilities": [
+        "Developed UI using HTML, CSS, and JavaScript.",
+        "Fixed bugs and optimized existing code.",
+        "Followed clean coding best practices.",
+        "Built internal UI components using React."
+      ],
+      "impact": [],
+      "projects": [
+        {
+          "id": "internal-portal",
+          "name": "Internal Employee Portal",
+          "description": "Enterprise-level internal portal for employee management, attendance tracking, and HR workflows.",
+          "techStack": ["HTML", "CSS", "JavaScript", "React.js"],
+          "status": "Completed"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "prestige-builder",
+      "title": "Prestige Builder App",
+      "type": "Personal Project",
+      "description": "Real estate builder web application with dynamic property listings, responsive UI, and component-based architecture.",
+      "features": [
+        "Dynamic property listing with filter and search",
+        "Responsive design for all devices",
+        "Component-based architecture for reusability",
+        "Interactive property detail pages"
+      ],
+      "challenges": [
+        "Handling dynamic routing for multiple property types",
+        "Optimizing image loading for property galleries"
+      ],
+      "learnings": [
+        "Mastered React component composition patterns",
+        "Learned responsive CSS Grid and Flexbox layouts",
+        "Improved state management for complex filtering logic"
+      ],
+      "techStack": ["React.js", "CSS3", "JavaScript"],
+      "github": "https://github.com/Namitha130/prestige-builder-app",
+      "liveDemo": "https://prestige-builder-app.vercel.app",
+      "platform": "Vercel",
+      "image": ""
+    },
+    {
+      "id": "shopease",
+      "title": "ShopEase",
+      "type": "Personal Project",
+      "description": "Movie listing platform using API integration with dynamic UI rendering, search functionality, and Redux state management.",
+      "features": [
+        "API-driven movie listing and search",
+        "Redux-based state management",
+        "Dynamic filtering and sorting",
+        "Responsive card-based UI"
+      ],
+      "challenges": [
+        "Managing complex Redux store for search and filter states",
+        "Handling API rate limits and error states gracefully"
+      ],
+      "learnings": [
+        "Deep understanding of Redux middleware and thunks",
+        "API error handling and retry strategies",
+        "SASS architecture with BEM methodology"
+      ],
+      "techStack": ["React.js", "Redux", "SASS", "REST API"],
+      "github": "https://github.com/Namitha130/shopEase",
+      "liveDemo": "https://shopease-green.vercel.app/",
+      "platform": "Vercel",
+      "image": ""
+    },
+    {
+      "id": "flixnext-ott",
+      "title": "FlixNext OTT",
+      "type": "Personal Project",
+      "description": "OTT platform clone using IMDb API for movie data with dynamic routing and API integration.",
+      "features": [
+        "IMDb API integration for real movie data",
+        "Dynamic routing for movie detail pages",
+        "Category-based browsing",
+        "Search with auto-suggestions"
+      ],
+      "challenges": [
+        "Handling nested API responses for movie metadata",
+        "Building a responsive video-player-like UI"
+      ],
+      "learnings": [
+        "Working with third-party APIs and data normalization",
+        "Dynamic routing patterns in React",
+        "Building media-rich responsive layouts"
+      ],
+      "techStack": ["React.js", "SASS", "REST API"],
+      "github": "https://github.com/Namitha130/FlixNext-OTT-using-imdbAPI",
+      "liveDemo": "https://flixnext-ott.vercel.app",
+      "platform": "Vercel",
+      "image": ""
+    },
+    {
+      "id": "tic-tac-toe",
+      "title": "Tic Tac Toe Game",
+      "type": "Personal Project",
+      "description": "Interactive Tic Tac Toe game with dynamic state updates.",
+      "features": [
+        "Two-player gameplay",
+        "Win detection algorithm",
+        "Score tracking across rounds",
+        "Reset and new game functionality"
+      ],
+      "challenges": [
+        "Implementing efficient win-detection logic",
+        "Managing game state transitions cleanly"
+      ],
+      "learnings": [
+        "Vanilla JavaScript DOM manipulation",
+        "State machine patterns for game logic",
+        "CSS animations for interactive feedback"
+      ],
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/Namitha130/tic-tac-toe-game",
+      "liveDemo": "https://tic-tac-toe-namitha.netlify.app",
+      "platform": "Netlify",
+      "image": ""
+    }
+  ],
+  "education": [
+    {
+      "degree": "BE — Electronics and Communication Engineering",
+      "institution": "Jain Institution of Technology, Davanagere",
+      "year": "2016 – 2020",
+      "grade": ""
+    },
+    {
+      "degree": "PUC",
+      "institution": "Your PU College Name",
+      "year": "2016",
+      "grade": ""
+    },
+    {
+      "degree": "SSLC",
+      "institution": "Your School Name",
+      "year": "2015",
+      "grade": ""
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Full Stack Development Program",
+      "issuer": "J-Spiders, Bangalore",
+      "year": "Jan 2023 – Oct 2023"
+    },
+    {
+      "title": "UI/UX Design Certification",
+      "issuer": "Google Coursera",
+      "year": ""
+    }
+  ],
+  "achievements": [
+    {
+      "title": "80% Faster Development",
+      "description": "Reduced dashboard development time by 80% through reusable component architecture."
+    },
+    {
+      "title": "UIDAI Onsite Work",
+      "description": "Worked onsite at UIDAI for QC Portal supporting government-scale systems."
+    },
+    {
+      "title": "Scalable Component Libraries",
+      "description": "Built scalable reusable component libraries used across multiple projects."
+    }
+  ],
+  "socialMedia": [
+    { "name": "LinkedIn", "path": "https://www.linkedin.com/in/namitha-t-p-130ln/" },
+    { "name": "GitHub", "path": "https://github.com/Namitha130" },
+    { "name": "Behance", "path": "https://www.behance.net/namithatp1201" }
+  ] 
+
+  
+
+}
+
