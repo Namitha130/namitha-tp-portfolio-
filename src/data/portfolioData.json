@@ -6,7 +6,7 @@
     "location": "Bangalore, Karnataka, India",
     "availability": "Open to opportunities | Freelance work",
     "profileImage": "",
-    "resumeUrl": "public/Namitha_TP_Resume.pdf",
+    "resumeUrl": "/Namitha_TP_Resume.pdf",
     "email": "itsnamitha130@gmail.com",
     "phone": "+91-8123578130",
     "socialLinks": {
@@ -177,7 +177,7 @@
       ],
       "techStack": ["React.js", "CSS3", "JavaScript" , "vite" , "Tailwind-css"],
       "github": "https://github.com/Namitha130/prestige-builder-app",
-      "liveDemo": "https://sri-lakshmi-krupa-c8dxfhbvj-namitha-tps-projects.vercel.app/",
+      "liveDemo": "https://sri-lakshmi-construction-website.vercel.app/",
       "platform": "Vercel",
       "image": ""
     },
@@ -202,7 +202,7 @@
         "SASS architecture with BEM methodology"
       ],
       "techStack": ["React.js", "Redux", "SASS", "REST API"],
-      "github": "https://github.com/Namitha130/shopEase",
+      "github": "https://github.com/Namitha130/shopease./",
       "liveDemo": "https://shopease-green.vercel.app/",
       "platform": "Vercel",
       "image": ""
@@ -228,37 +228,12 @@
         "Building media-rich responsive layouts"
       ],
       "techStack": ["React.js", "SASS", "REST API"],
-      "github": "https://github.com/Namitha130/FlixNext-OTT-using-imdbAPI",
-      "liveDemo": "https://flixnext-ott.vercel.app",
+      "github": "https://github.com/Namitha130/FlixNext",
+      "liveDemo": "https://flix-next-ott-using-imdb-api.vercel.app/",
       "platform": "Vercel",
       "image": ""
-    },
-    {
-      "id": "tic-tac-toe",
-      "title": "Tic Tac Toe Game",
-      "type": "Personal Project",
-      "description": "Interactive Tic Tac Toe game with dynamic state updates.",
-      "features": [
-        "Two-player gameplay",
-        "Win detection algorithm",
-        "Score tracking across rounds",
-        "Reset and new game functionality"
-      ],
-      "challenges": [
-        "Implementing efficient win-detection logic",
-        "Managing game state transitions cleanly"
-      ],
-      "learnings": [
-        "Vanilla JavaScript DOM manipulation",
-        "State machine patterns for game logic",
-        "CSS animations for interactive feedback"
-      ],
-      "techStack": ["HTML", "CSS", "JavaScript"],
-      "github": "https://github.com/Namitha130/tic-tac-toe-game",
-      "liveDemo": "https://tic-tac-toe-namitha.netlify.app",
-      "platform": "Netlify",
-      "image": ""
     }
+    
   ],
   "education": [
     {
@@ -311,8 +286,5 @@
     { "name": "GitHub", "path": "https://github.com/Namitha130" },
     { "name": "Behance", "path": "https://www.behance.net/namithatp1201" }
   ] 
-
-  
-
 }
 
