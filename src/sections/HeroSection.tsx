@@ -3,7 +3,6 @@ import { FiArrowDown, FiDownload, FiMapPin, FiEye } from "react-icons/fi";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { useEffect, useState, useCallback } from "react";
 import portfolioData from "@/data/portfolioData.json";
-import profileImg from "@/assets/profile.jpg";
 import { FaBehance } from "react-icons/fa";
 const ROLES = [
   "Frontend Developer",
@@ -14,7 +13,7 @@ const ROLES = [
 const HeroSection = () => {
   const { name, title, summary, resumeUrl, location, availability } = portfolioData.personal;
   const socials = portfolioData.socialMedia;
-
+const profileImg = portfolioData.personal.profileImage; 
   // Typing effect
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);

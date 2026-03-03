@@ -5,12 +5,7 @@ import PageTransition from "@/components/PageTransition";
 import AnimatedSection from "@/components/AnimatedSection";
 import portfolioData from "@/data/portfolioData.json";
 import { FiArrowLeft, FiGithub, FiExternalLink } from "react-icons/fi";
-import project1 from "@/assets/project-1.png";
-import project2 from "@/assets/project-2.png";
-import project3 from "@/assets/project-3.png";
-import project4 from "@/assets/project-4.png";
 
-const projectImages = [project1, project2, project3, project4];
 
 const ProjectDetailPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -52,7 +47,7 @@ const ProjectDetailPage = () => {
             <AnimatedSection delay={0.1}>
               <div className="rounded-2xl overflow-hidden mb-8 aspect-video bg-secondary">
                 <img
-                  src={projectImages[projectIdx] || project.image}
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />

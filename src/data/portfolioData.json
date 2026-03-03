@@ -5,7 +5,7 @@
     "summary": "Frontend Developer with 3+ years of experience building scalable enterprise and government web applications using React.js, Redux, and modern JavaScript. Specialized in reusable component architecture, performance optimization, and REST API integration.",
     "location": "Bangalore, Karnataka, India",
     "availability": "Open to opportunities | Freelance work",
-    "profileImage": "",
+    "profileImage": "/assets/profile.jpg",
     "resumeUrl": "/Namitha_TP_Resume.pdf",
     "email": "itsnamitha130@gmail.com",
     "phone": "+91-8123578130",
@@ -177,9 +177,9 @@
       ],
       "techStack": ["React.js", "CSS3", "JavaScript" , "vite" , "Tailwind-css"],
       "github": "https://github.com/Namitha130/prestige-builder-app",
-      "liveDemo": "https://sri-lakshmi-construction-website.vercel.app/",
+      "liveDemo": "https://sri-lakshmi-krupa-c8dxfhbvj-namitha-tps-projects.vercel.app/",
       "platform": "Vercel",
-      "image": ""
+      "image": "/assets/sriLakshmiConstructions.png"
     },
     {
       "id": "shopease",
@@ -205,7 +205,7 @@
       "github": "https://github.com/Namitha130/shopease./",
       "liveDemo": "https://shopease-green.vercel.app/",
       "platform": "Vercel",
-      "image": ""
+      "image": "/assets/shopEase.png"
     },
     {
       "id": "flixnext-ott",
@@ -231,7 +231,7 @@
       "github": "https://github.com/Namitha130/FlixNext",
       "liveDemo": "https://flix-next-ott-using-imdb-api.vercel.app/",
       "platform": "Vercel",
-      "image": ""
+      "image": "/assets/flixnext.png"
     }
     
   ],
